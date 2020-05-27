@@ -8,9 +8,8 @@ app.set('view engine', 'ejs'); //sent views to ejs
 //This is how thr route is built in Express
 app.get('/', (req,res)=>{
 
-  //res.send(`App is running on the port ${PORT}`);
-//res.json(data);
-  res.render('pages/index');
+var title = "Our Home Page";
+  res.render('pages/index', {title:title});
 });
 
 
