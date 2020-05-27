@@ -12,6 +12,14 @@ var title = "Our Home Page";
   res.render('pages/index', {title:title});
 });
 
+app.get('/users', (req,res)=>{
+
+var title = "Our Home Page";
+  res.render('pages/index', {
+    title:title,
+    users:data
+  });
+});
 
 app.listen(PORT,()=>{
 
